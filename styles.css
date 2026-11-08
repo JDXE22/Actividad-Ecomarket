@@ -1462,6 +1462,11 @@ select:focus-visible {
 
 /* --- Tablets Verticales / Pantallas Medianas (>= 768px) --- */
 @media (min-width: 768px) {
+  .cabecera-area-admin {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
   .encabezado-principal {
     grid-template-columns: auto auto 1fr;
     align-items: center;
@@ -1536,6 +1541,30 @@ select:focus-visible {
   .contenido-principal {
     padding: var(--espacio-xl) var(--espacio-lg);
     gap: var(--espacio-2xl);
+  }
+
+  .seccion-admin {
+    grid-template-columns: 250px 1fr;
+    align-items: stretch;
+  }
+
+  .sidebar-admin {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
+    box-shadow: none;
+    z-index: 1;
+  }
+
+  .boton-menu-hamburguesa,
+  .boton-cerrar-sidebar,
+  .overlay-sidebar-admin {
+    display: none;
+  }
+
+  .area-principal-admin {
+    padding: var(--espacio-lg);
   }
 
   .grilla-beneficios {
