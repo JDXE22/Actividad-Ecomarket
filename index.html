@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoMarket - Marketplace colombiano de alimentos orgánicos y productos sostenibles directo de productores locales.">
+  <title>EcoMarket | Alimentos Orgánicos y Productos Sostenibles Locales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado Principal -->
+  <header class="encabezado-principal" id="inicio">
+    <div class="contenedor-logo">
+      <a href="#inicio" class="enlace-logo" aria-label="Ir al inicio de EcoMarket">
+        <span class="logo-texto">EcoMarket</span>
+      </a>
+      <span class="insignia-cobertura">Comercio Local Sostenible</span>
+    </div>
+
+    <!-- Selector de Ciudad -->
+    <div class="selector-cobertura">
+      <label for="selector-ciudad-cabecera">Tu ubicación:</label>
+      <select id="selector-ciudad-cabecera" name="ciudad-usuario" class="campo-seleccion-cabecera">
+        <option value="todas">Todas las ciudades</option>
+        <option value="bucaramanga">Bucaramanga</option>
+        <option value="floridablanca">Floridablanca</option>
+        <option value="giron">Girón</option>
+        <option value="bogota">Bogotá</option>
+        <option value="medellin">Medellín</option>
+        <option value="cali">Cali</option>
+        <option value="tunja">Tunja</option>
+        <option value="cucuta">Cúcuta</option>
+      </select>
+    </div>
+
+    <!-- Navegación Principal -->
+    <nav class="navegacion-principal" aria-label="Navegación principal del sitio">
+      <ul class="lista-navegacion">
+        <li class="item-navegacion"><a href="#hero" class="enlace-navegacion">Inicio</a></li>
+        <li class="item-navegacion"><a href="#beneficios" class="enlace-navegacion">Beneficios</a></li>
+        <li class="item-navegacion"><a href="#categorias" class="enlace-navegacion">Categorías</a></li>
+        <li class="item-navegacion"><a href="#catalogo" class="enlace-navegacion">Catálogo</a></li>
+        <li class="item-navegacion"><a href="#productores" class="enlace-navegacion">Productores</a></li>
+        <li class="item-navegacion"><a href="#testimonios" class="enlace-navegacion">Testimonios</a></li>
+        <li class="item-navegacion"><a href="#suscripcion" class="enlace-navegacion">Suscripción</a></li>
+        <li class="item-navegacion"><a href="#admin" class="enlace-navegacion enlace-panel-admin">Panel de Gestión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="contenido-principal">
+
+    <!-- Sección Hero / Propuesta de Valor -->
+    <section class="seccion-hero" id="hero">
+      <div class="hero-informacion">
+        <span class="etiqueta-destacada">Directo de la tierra a tu mesa</span>
+        <h1 class="hero-titulo">Alimentos orgánicos y sostenibles cultivados por manos colombianas</h1>
+        <p class="hero-descripcion">
+          Conectamos a campesinos y artesanos locales de Santander, Cundinamarca, Antioquia, Valle y Boyacá con hogares que valoran la salud, la trazabilidad y el comercio justo.
+        </p>
+        <div class="hero-acciones">
+          <a href="#catalogo" class="boton-cta-principal">Explorar catálogo inicial</a>
+          <a href="#beneficios" class="boton-secundario">Conoce nuestro modelo</a>
+        </div>
+      </div>
+      <div class="hero-multimedia">
+        <img src="https://placehold.co/640x480/dcfce2/176429?text=Cosecha+Fresca+y+Organica" alt="Canasta surtida de verduras, frutas y café cultivados de forma sostenible por productores locales" class="hero-imagen">
+      </div>
+    </section>
+
+    <!-- Sección Beneficios -->
+    <section class="seccion-beneficios" id="beneficios">
+      <div class="encabezado-seccion">
+        <span class="subtitulo-seccion">Impacto Positivo</span>
+        <h2 class="titulo-seccion">¿Por qué elegir EcoMarket?</h2>
+        <p class="descripcion-seccion">Cada compra impulsa el desarrollo rural, respeta los ciclos de la tierra y garantiza frescura absoluta.</p>
+      </div>
+
+      <div class="grilla-beneficios">
+        <article class="tarjeta-beneficio">
+          <img src="https://placehold.co/80x80/dcfce2/177e2e?text=100%25" alt="Icono representativo de alimentos 100% ecológicos sin químicos" class="icono-beneficio">
+          <h3 class="titulo-beneficio">100% Orgánico y Ecológico</h3>
+          <p class="texto-beneficio">Alimentos libres de pesticidas sintéticos y químicos nocivos, protegiendo tu nutrición y los suelos fértiles.</p>
+        </article>
+
+        <article class="tarjeta-beneficio">
+          <img src="https://placehold.co/80x80/d6f1ee/255e60?text=Justo" alt="Icono representativo de comercio justo sin intermediarios" class="icono-beneficio">
+          <h3 class="titulo-beneficio">Comercio Justo y Directo</h3>
+          <p class="texto-beneficio">Pagamos precios justos que recompensan dignamente el trabajo campesino, eliminando intermediarios innecesarios.</p>
+        </article>
+
+        <article class="tarjeta-beneficio">
+          <img src="https://placehold.co/80x80/dcfce2/177e2e?text=Fresco" alt="Icono representativo de frescura y baja huella de carbono" class="icono-beneficio">
+          <h3 class="titulo-beneficio">Cosecha Fresca Local</h3>
+          <p class="texto-beneficio">Rutas de distribución eficientes en nuestras 8 ciudades de cobertura, minimizando traslados y emisiones contaminantes.</p>
+        </article>
+
+        <article class="tarjeta-beneficio">
+          <img src="https://placehold.co/80x80/d6f1ee/255e60?text=Trazable" alt="Icono representativo de trazabilidad y origen transparente" class="icono-beneficio">
+          <h3 class="titulo-beneficio">Trazabilidad Total</h3>
+          <p class="texto-beneficio">Conoce exactamente qué familia campesina cultivó tu alimento, en qué vereda y bajo qué prácticas sostenibles.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Categorías -->
+    <section class="seccion-categorias" id="categorias">
+      <div class="encabezado-seccion">
+        <span class="subtitulo-seccion">Nuestra Despensa</span>
+        <h2 class="titulo-seccion">Categorías de Productos</h2>
+        <p class="descripcion-seccion">Descubre la variedad de productos agroecológicos recolectados en su punto óptimo de maduración.</p>
+      </div>
+
+      <div class="grilla-categorias">
+        <article class="tarjeta-categoria">
+          <img src="https://placehold.co/320x240/f0fdf2/177e2e?text=Frutas+y+Verduras" alt="Selección de hortalizas, legumbres y frutas frescas de temporada" class="imagen-categoria">
+          <div class="cuerpo-categoria">
+            <h3 class="nombre-categoria">Frutas y Verduras</h3>
+            <p class="detalle-categoria">Frescura campesina de huertas agroecológicas.</p>
+            <a href="#catalogo" class="enlace-explorar-categoria">Explorar categoría</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-categoria">
+          <img src="https://placehold.co/320x240/d6f1ee/255e60?text=Cafe+y+Cacao" alt="Granos de café especial de altura y cacao criollo artesanal" class="imagen-categoria">
+          <div class="cuerpo-categoria">
+            <h3 class="nombre-categoria">Café y Cacao Especial</h3>
+            <p class="detalle-categoria">Granos selectos cultivados bajo sombra y comercio ético.</p>
+            <a href="#catalogo" class="enlace-explorar-categoria">Explorar categoría</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-categoria">
+          <img src="https://placehold.co/320x240/f0fdf2/177e2e?text=Lacteos+y+Huevos" alt="Huevos campesinos de gallinas libres y quesos artesanales" class="imagen-categoria">
+          <div class="cuerpo-categoria">
+            <h3 class="nombre-categoria">Lácteos y Huevos de Pastoreo</h3>
+            <p class="detalle-categoria">Bienestar animal comprobado y derivados naturales.</p>
+            <a href="#catalogo" class="enlace-explorar-categoria">Explorar categoría</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-categoria">
+          <img src="https://placehold.co/320x240/d6f1ee/255e60?text=Granos+y+Semillas" alt="Quinoa, frijoles andinos, maíz nativo y semillas seleccionadas" class="imagen-categoria">
+          <div class="cuerpo-categoria">
+            <h3 class="nombre-categoria">Granos y Cereales Andinos</h3>
+            <p class="detalle-categoria">Semillas ancestrales y granos libres de transgénicos.</p>
+            <a href="#catalogo" class="enlace-explorar-categoria">Explorar categoría</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-categoria">
+          <img src="https://placehold.co/320x240/f0fdf2/177e2e?text=Miel+y+Conservas" alt="Miel pura de abejas y conservas artesanales sin preservativos" class="imagen-categoria">
+          <div class="cuerpo-categoria">
+            <h3 class="nombre-categoria">Mieles y Conservas</h3>
+            <p class="detalle-categoria">Endulzantes biológicos y mermeladas sin azúcar añadida.</p>
+            <a href="#catalogo" class="enlace-explorar-categoria">Explorar categoría</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Barra Lateral de Filtros (Drawer accesible para vistas móviles) -->
+    <aside class="sidebar-filtros" id="panel-filtros-movil" aria-label="Filtros de búsqueda avanzada">
+      <div class="cabecera-sidebar">
+        <h3 class="titulo-sidebar">Filtros de Búsqueda</h3>
+        <p class="descripcion-sidebar">Ajusta los criterios de selección para encontrar productos cercanos a tu domicilio.</p>
+      </div>
+
+      <div class="grupo-filtro-sidebar">
+        <label for="filtro-sidebar-categoria" class="etiqueta-control">Categoría:</label>
+        <select id="filtro-sidebar-categoria" name="sidebar-categoria" class="campo-seleccion">
+          <option value="todas">Todas las categorías</option>
+          <option value="frutas-verduras">Frutas y Verduras</option>
+          <option value="cafe-cacao">Café y Cacao</option>
+          <option value="lacteos-huevos">Lácteos y Huevos</option>
+          <option value="granos-cereales">Granos y Cereales</option>
+          <option value="conservas-miel">Mieles y Conservas</option>
+        </select>
+      </div>
+
+      <div class="grupo-filtro-sidebar">
+        <label for="filtro-sidebar-ciudad" class="etiqueta-control">Ciudad de origen:</label>
+        <select id="filtro-sidebar-ciudad" name="sidebar-ciudad" class="campo-seleccion">
+          <option value="todas">Cualquier ciudad</option>
+          <option value="bucaramanga">Bucaramanga</option>
+          <option value="floridablanca">Floridablanca</option>
+          <option value="giron">Girón</option>
+          <option value="bogota">Bogotá</option>
+          <option value="medellin">Medellín</option>
+          <option value="cali">Cali</option>
+          <option value="tunja">Tunja</option>
+          <option value="cucuta">Cúcuta</option>
+        </select>
+      </div>
+
+      <div class="grupo-filtro-sidebar">
+        <label for="filtro-sidebar-precio" class="etiqueta-control">Ordenar por precio:</label>
+        <select id="filtro-sidebar-precio" name="sidebar-precio" class="campo-seleccion">
+          <option value="relevancia">Relevancia</option>
+          <option value="menor-mayor">Menor a mayor</option>
+          <option value="mayor-menor">Mayor a menor</option>
+        </select>
+      </div>
+
+      <div class="grupo-filtro-sidebar-casilla">
+        <input type="checkbox" id="filtro-sidebar-organico" name="sidebar-organico" class="campo-casilla">
+        <label for="filtro-sidebar-organico" class="etiqueta-casilla">Solo certificación orgánica</label>
+      </div>
+    </aside>
+
+    <!-- Sección Catálogo de Productos y Búsqueda Interactiva -->
+    <section class="seccion-catalogo" id="catalogo">
+      <div class="encabezado-seccion">
+        <span class="subtitulo-seccion">Comercio Responsable</span>
+        <h2 class="titulo-seccion">Catálogo de Alimentos Sostenibles</h2>
+        <p class="descripcion-seccion">Encuentra productos orgánicos disponibles para entrega inmediata en tu ciudad.</p>
+      </div>
+
+      <!-- Barra de Control y Búsqueda -->
+      <div class="barra-control-catalogo">
+        <div class="control-busqueda">
+          <label for="campo-busqueda-producto" class="etiqueta-control">Buscar alimento o productor:</label>
+          <input type="search" id="campo-busqueda-producto" name="busqueda" placeholder="Ej. Fresas orgánicas, Café de Girón..." class="campo-texto">
+        </div>
+
+        <div class="control-filtro">
+          <label for="selector-categoria-catalogo" class="etiqueta-control">Filtrar por categoría:</label>
+          <select id="selector-categoria-catalogo" name="filtro-categoria" class="campo-seleccion">
+            <option value="todas">Todas las categorías</option>
+            <option value="frutas-verduras">Frutas y Verduras</option>
+            <option value="cafe-cacao">Café y Cacao</option>
+            <option value="lacteos-huevos">Lácteos y Huevos</option>
+            <option value="granos-cereales">Granos y Cereales</option>
+            <option value="conservas-miel">Mieles y Conservas</option>
+          </select>
+        </div>
+
+        <div class="control-filtro">
+          <label for="selector-ciudad-catalogo" class="etiqueta-control">Filtrar por ciudad:</label>
+          <select id="selector-ciudad-catalogo" name="filtro-ciudad" class="campo-seleccion">
+            <option value="todas">Todas las ciudades válidas</option>
+            <option value="bucaramanga">Bucaramanga</option>
+            <option value="floridablanca">Floridablanca</option>
+            <option value="giron">Girón</option>
+            <option value="bogota">Bogotá</option>
+            <option value="medellin">Medellín</option>
+            <option value="cali">Cali</option>
+            <option value="tunja">Tunja</option>
+            <option value="cucuta">Cúcuta</option>
+          </select>
+        </div>
+
+        <div class="control-orden">
+          <label for="selector-orden-catalogo" class="etiqueta-control">Ordenar por:</label>
+          <select id="selector-orden-catalogo" name="orden" class="campo-seleccion">
+            <option value="predeterminado">Predeterminado</option>
+            <option value="precio-asc">Precio: Menor a Mayor</option>
+            <option value="precio-desc">Precio: Mayor a Menor</option>
+            <option value="nombre-asc">Nombre: A - Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Notificador accesible de resultados -->
+      <div class="barra-estado-resultados" aria-live="polite" id="estado-resultados-catalogo">
+        <span class="conteo-resultados">Mostrando 6 productos destacados del dataset verificado</span>
+      </div>
+
+      <!-- Grilla de Tarjetas de Producto -->
+      <div class="grilla-productos" id="contenedor-grilla-productos">
+
+        <article class="tarjeta-producto" id="producto-eco-001">
+          <div class="contenedor-imagen-producto">
+            <img src="https://placehold.co/400x300/dcfce2/176429?text=Fresas+de+Berlin" alt="Canastilla de fresas orgánicas frescas de altura" class="imagen-producto">
+            <span class="insignia-producto organico">Certificado Orgánico</span>
+          </div>
+          <div class="cuerpo-producto">
+            <span class="categoria-producto">Frutas y Verduras</span>
+            <h3 class="nombre-producto">Fresas Agroecológicas de Berlín</h3>
+            <p class="origen-producto">Productor: <strong>Finca El Roble</strong> &bull; Bucaramanga / Tona</p>
+            <div class="fila-precio-producto">
+              <span class="precio-producto">$11.500 COP</span>
+              <span class="unidad-producto">/ Canastilla 500g</span>
+            </div>
+            <p class="estado-stock stock-disponible">En inventario: 24 unidades</p>
+            <button type="button" class="boton-adicionar-carrito" aria-label="Añadir Fresas Agroecológicas de Berlín al carrito">Añadir al carrito</button>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" id="producto-eco-002">
+          <div class="contenedor-imagen-producto">
+            <img src="https://placehold.co/400x300/d6f1ee/204041?text=Cafe+Giron+Especial" alt="Bolsa de café especial de origen cultivado en Girón" class="imagen-producto">
+            <span class="insignia-producto origen">Origen Santander</span>
+          </div>
+          <div class="cuerpo-producto">
+            <span class="categoria-producto">Café y Cacao</span>
+            <h3 class="nombre-producto">Café Especial Tostión Media</h3>
+            <p class="origen-producto">Productor: <strong>AgroGirón Sostenible</strong> &bull; Girón</p>
+            <div class="fila-precio-producto">
+              <span class="precio-producto">$24.000 COP</span>
+              <span class="unidad-producto">/ Bolsa 454g</span>
+            </div>
+            <p class="estado-stock stock-disponible">En inventario: 18 unidades</p>
+            <button type="button" class="boton-adicionar-carrito" aria-label="Añadir Café Especial Tostión Media al carrito">Añadir al carrito</button>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" id="producto-eco-003">
+          <div class="contenedor-imagen-producto">
+            <img src="https://placehold.co/400x300/dcfce2/176429?text=Huevos+Campesinos" alt="Cubeta de huevos criollos de pastoreo de Floridablanca" class="imagen-producto">
+            <span class="insignia-producto organico">Pastoreo Libre</span>
+          </div>
+          <div class="cuerpo-producto">
+            <span class="categoria-producto">Lácteos y Huevos</span>
+            <h3 class="nombre-producto">Huevos Campesinos de Gallina Feliz</h3>
+            <p class="origen-producto">Productor: <strong>Granja La Colina</strong> &bull; Floridablanca</p>
+            <div class="fila-precio-producto">
+              <span class="precio-producto">$21.000 COP</span>
+              <span class="unidad-producto">/ Cubeta x30</span>
+            </div>
+            <p class="estado-stock stock-disponible">En inventario: 35 unidades</p>
+            <button type="button" class="boton-adicionar-carrito" aria-label="Añadir Huevos Campesinos de Gallina Feliz al carrito">Añadir al carrito</button>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" id="producto-eco-004">
+          <div class="contenedor-imagen-producto">
+            <img src="https://placehold.co/400x300/d6f1ee/204041?text=Quinoa+Boyacense" alt="Empaque de quinua perlada orgánica de Boyacá" class="imagen-producto">
+            <span class="insignia-producto organico">Cultivo Ancestral</span>
+          </div>
+          <div class="cuerpo-producto">
+            <span class="categoria-producto">Granos y Cereales</span>
+            <h3 class="nombre-producto">Quinua Real Agroecológica</h3>
+            <p class="origen-producto">Productor: <strong>Asociación Altiplano</strong> &bull; Tunja</p>
+            <div class="fila-precio-producto">
+              <span class="precio-producto">$14.200 COP</span>
+              <span class="unidad-producto">/ Bolsa 500g</span>
+            </div>
+            <p class="estado-stock stock-disponible">En inventario: 40 unidades</p>
+            <button type="button" class="boton-adicionar-carrito" aria-label="Añadir Quinua Real Agroecológica al carrito">Añadir al carrito</button>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" id="producto-eco-005">
+          <div class="contenedor-imagen-producto">
+            <img src="https://placehold.co/400x300/dcfce2/176429?text=Miel+de+Bosque" alt="Frasco de miel pura de abejas multifloral" class="imagen-producto">
+            <span class="insignia-producto organico">100% Pura</span>
+          </div>
+          <div class="cuerpo-producto">
+            <span class="categoria-producto">Mieles y Conservas</span>
+            <h3 class="nombre-producto">Miel Multifloral de Bosque Andino</h3>
+            <p class="origen-producto">Productor: <strong>Apiarios de la Sabana</strong> &bull; Bogotá</p>
+            <div class="fila-precio-producto">
+              <span class="precio-producto">$28.000 COP</span>
+              <span class="unidad-producto">/ Frasco 500g</span>
+            </div>
+            <p class="estado-stock stock-disponible">En inventario: 12 unidades</p>
+            <button type="button" class="boton-adicionar-carrito" aria-label="Añadir Miel Multifloral de Bosque Andino al carrito">Añadir al carrito</button>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto" id="producto-eco-006">
+          <div class="contenedor-imagen-producto">
+            <img src="https://placehold.co/400x300/d6f1ee/204041?text=Aguacate+Hass" alt="Malla con aguacates Hass de cultivo limpio antioqueño" class="imagen-producto">
+            <span class="insignia-producto origen">Cultivo Limpio</span>
+          </div>
+          <div class="cuerpo-producto">
+            <span class="categoria-producto">Frutas y Verduras</span>
+            <h3 class="nombre-producto">Aguacate Hass Agroecológico</h3>
+            <p class="origen-producto">Productor: <strong>Finca Las Palmas</strong> &bull; Medellín</p>
+            <div class="fila-precio-producto">
+              <span class="precio-producto">$13.800 COP</span>
+              <span class="unidad-producto">/ Kilogramo</span>
+            </div>
+            <p class="estado-stock stock-disponible">En inventario: 50 unidades</p>
+            <button type="button" class="boton-adicionar-carrito" aria-label="Añadir Aguacate Hass Agroecológico al carrito">Añadir al carrito</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Sección Productores Aliados -->
+    <section class="seccion-productores" id="productores">
+      <div class="encabezado-seccion">
+        <span class="subtitulo-seccion">Historias Reales</span>
+        <h2 class="titulo-seccion">Nuestros Productores Aliados</h2>
+        <p class="descripcion-seccion">Conoce a las familias agricultoras que custodian la biodiversidad y producen con amor y dignidad.</p>
+      </div>
+
+      <div class="grilla-productores">
+        <article class="tarjeta-productor">
+          <img src="https://placehold.co/200x200/f0fdf2/177e2e?text=Familia+Gomez" alt="Familia agricultora de Girón cultivando café bajo sombra" class="foto-productor">
+          <div class="cuerpo-productor">
+            <h3 class="nombre-productor">Familia Gómez &bull; AgroGirón</h3>
+            <span class="ubicacion-productor">Vereda El Carrizal, Girón (Santander)</span>
+            <p class="historia-productor">Cultivan café especial de exportación implementando sistemas agroforestales que protegen las fuentes hídricas de la cuenca del río de Oro.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta-productor">
+          <img src="https://placehold.co/200x200/d6f1ee/255e60?text=Don+Alvaro" alt="Don Álvaro campesino de Boyacá cosechando tubérculos andinos y quinua" class="foto-productor">
+          <div class="cuerpo-productor">
+            <h3 class="nombre-productor">Don Álvaro Pérez &bull; Semillas Vivas</h3>
+            <span class="ubicacion-productor">Tunja (Boyacá)</span>
+            <p class="historia-productor">Guardián de semillas nativas y papas ancestrales cultivadas a más de 2.800 metros de altura sin fertilizantes nitrogenados sintéticos.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta-productor">
+          <img src="https://placehold.co/200x200/f0fdf2/177e2e?text=Coop+Floridablanca" alt="Mujeres recolectoras de hortalizas orgánicas en Floridablanca" class="foto-productor">
+          <div class="cuerpo-productor">
+            <h3 class="nombre-productor">Cooperativa Verde &bull; Floridablanca</h3>
+            <span class="ubicacion-productor">Floridablanca (Santander)</span>
+            <p class="historia-productor">Red de mujeres campesinas líderes en huertas periurbanas ecológicas que abastecen de hortalizas frescas al área metropolitana de Bucaramanga.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="seccion-testimonios" id="testimonios">
+      <div class="encabezado-seccion">
+        <span class="subtitulo-seccion">Comunidad Consciente</span>
+        <h2 class="titulo-seccion">Lo que dicen nuestros compradores</h2>
+        <p class="descripcion-seccion">Familias que cambiaron su manera de alimentarse apoyando directamente el agro local.</p>
+      </div>
+
+      <div class="grilla-testimonios">
+        <article class="tarjeta-testimonio">
+          <p class="contenido-testimonio">&ldquo;La frescura de los vegetales entregados en Bucaramanga no tiene comparación con la del supermercado tradicional. Se siente el aroma real del campo y sé que mi pago llega directo al productor.&rdquo;</p>
+          <div class="autor-testimonio">
+            <h3 class="nombre-autor">Camila Valenzuela</h3>
+            <span class="ciudad-autor">Bucaramanga, Santander</span>
+            <span class="calificacion-autor" aria-label="Calificación 5 de 5 estrellas">&starf;&starf;&starf;&starf;&starf;</span>
+          </div>
+        </article>
+
+        <article class="tarjeta-testimonio">
+          <p class="contenido-testimonio">&ldquo;El café de Girón llegó tostado de la misma semana a mi apartamento en Bogotá. La plataforma es clara, rápida y el impacto ambiental es transparente.&rdquo;</p>
+          <div class="autor-testimonio">
+            <h3 class="nombre-autor">Juan Pablo Serrano</h3>
+            <span class="ciudad-autor">Bogotá D.C.</span>
+            <span class="calificacion-autor" aria-label="Calificación 5 de 5 estrellas">&starf;&starf;&starf;&starf;&starf;</span>
+          </div>
+        </article>
+
+        <article class="tarjeta-testimonio">
+          <p class="contenido-testimonio">&ldquo;Comprar huevos campesinos y quinua boyacense directo a los agricultores de Tunja nos dio total tranquilidad sobre la nutrición de nuestros hijos en Medellín.&rdquo;</p>
+          <div class="autor-testimonio">
+            <h3 class="nombre-autor">Mariana Duque</h3>
+            <span class="ciudad-autor">Medellín, Antioquia</span>
+            <span class="calificacion-autor" aria-label="Calificación 5 de 5 estrellas">&starf;&starf;&starf;&starf;&starf;</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Formulario de Suscripción -->
+    <section class="seccion-suscripcion" id="suscripcion">
+      <div class="contenedor-suscripcion">
+        <div class="informacion-suscripcion">
+          <span class="subtitulo-seccion">Cosechas de Temporada</span>
+          <h2 class="titulo-seccion">Recibe novedades del campo en tu correo</h2>
+          <p class="descripcion-seccion">
+            Suscríbete para conocer los calendarios de cosecha, ofertas semanales y disponibilidad de nuevos productores en Bucaramanga, Bogotá, Medellín y más ciudades aliadas.
+          </p>
+        </div>
+
+        <form action="#" method="post" class="formulario-suscripcion" id="formulario-registro-novedades">
+          <div class="campo-formulario">
+            <label for="nombre-suscripcion" class="etiqueta-formulario">Nombre completo:</label>
+            <input type="text" id="nombre-suscripcion" name="nombre-usuario" placeholder="Ej. Andrea Morales" required class="campo-entrada">
+          </div>
+
+          <div class="campo-formulario">
+            <label for="correo-suscripcion" class="etiqueta-formulario">Correo electrónico:</label>
+            <input type="email" id="correo-suscripcion" name="correo-usuario" placeholder="andrea@ejemplo.com" required class="campo-entrada">
+          </div>
+
+          <div class="campo-formulario-casilla">
+            <input type="checkbox" id="acepta-terminos-suscripcion" name="acepta-terminos" required class="campo-casilla">
+            <label for="acepta-terminos-suscripcion" class="etiqueta-casilla-suscripcion">Acepto la política de tratamiento de datos personales y comunicaciones ecológicas.</label>
+          </div>
+
+          <button type="submit" class="boton-enviar-suscripcion">Suscribirme a las cosechas</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Sección Panel Administrativo (Gestión CRUD e Indicadores) -->
+<!-- Sección Panel Administrativo (Gestión CRUD e Indicadores) -->
+    <section class="seccion-admin" id="admin" aria-label="Panel de Administración de EcoMarket">
+
+      <!-- Fondo oscuro para cuando el menú hamburguesa está abierto en móvil -->
+      <div class="overlay-sidebar-admin" id="overlay-menu-admin" aria-hidden="true"></div>
+
+      <!-- 1. SIDEBAR IZQUIERDO CON LOGOTIPO Y NAVEGACIÓN -->
+      <aside class="sidebar-admin" id="sidebar-navegacion-admin" aria-label="Menú lateral del panel administrativo">
+        <div class="sidebar-admin-cabecera">
+          <a href="#inicio" class="sidebar-logo-enlace">
+            <svg class="icono-svg-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+            </svg>
+            <span class="sidebar-logo-texto">EcoMarket</span>
+          </a>
+          <span class="insignia-admin-rol">Admin Agro</span>
+          <button type="button" class="boton-cerrar-sidebar" id="boton-cerrar-menu-admin" aria-label="Cerrar menú lateral">
+            &times;
+          </button>
+        </div>
+
+        <nav class="navegacion-sidebar-admin" aria-label="Secciones del dashboard">
+          <ul class="lista-menu-admin">
+            <li>
+              <a href="#kpis-resumen" class="enlace-menu-admin activo">
+                <svg class="icono-menu-admin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>Resumen e Indicadores</span>
+              </a>
+            </li>
+            <li>
+              <a href="#modulo-analitica" class="enlace-menu-admin">
+                <svg class="icono-menu-admin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                <span>Analítica de Stock</span>
+              </a>
+            </li>
+            <li>
+              <a href="#modulo-formulario-crud" class="enlace-menu-admin">
+                <svg class="icono-menu-admin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                <span>Registrar Alimento</span>
+              </a>
+            </li>
+            <li>
+              <a href="#modulo-tabla-inventario" class="enlace-menu-admin">
+                <svg class="icono-menu-admin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                <span>Inventario General</span>
+              </a>
+            </li>
+            <li>
+              <a href="#productores" class="enlace-menu-admin">
+                <svg class="icono-menu-admin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span>Productores Aliados</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-admin-pie">
+          <div class="estado-almacenamiento">
+            <span class="punto-estado-activo" aria-hidden="true"></span>
+            <span>Sincronizado (localStorage)</span>
+          </div>
+          <a href="#catalogo" class="enlace-volver-tienda">&larr; Volver al Catálogo Público</a>
+        </div>
+      </aside>
+
+      <!-- 2. ÁREA PRINCIPAL DEL DASHBOARD -->
+      <div class="area-principal-admin">
+
+        <!-- Cabecera con Menú Hamburguesa, Título, Bienvenida y Acciones Rápidas -->
+        <header class="cabecera-area-admin">
+          <div class="bloque-titulo-bienvenida">
+            <button type="button" class="boton-menu-hamburguesa" id="boton-abrir-menu-admin" aria-label="Abrir menú de navegación administrativa" aria-expanded="false" aria-controls="sidebar-navegacion-admin">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+
+            <div class="textos-bienvenida-admin">
+              <span class="saludo-operador">¡Hola, Gestor EcoMarket! &bull; Red activa en 8 ciudades</span>
+              <h2 class="titulo-seccion titulo-dashboard-admin">Panel de Gestión e Inventario</h2>
+              <p class="descripcion-dashboard-admin">Supervisa existencias campesinas, indicadores de cobertura y precios justos en tiempo real.</p>
+            </div>
+          </div>
+
+          <!-- Acciones Rápidas -->
+          <div class="acciones-rapidas-admin" role="toolbar" aria-label="Acciones rápidas del inventario">
+            <a href="#crud-nombre-producto" class="boton-accion-rapida primario" id="accion-rapida-nuevo">
+              + Nuevo Alimento
+            </a>
+            <a href="#tabla-gestion-inventario" class="boton-accion-rapida secundario">
+              Ver Existencias
+            </a>
+            <button type="button" class="boton-accion-rapida alerta" id="accion-rapida-restablecer" title="Restaurar dataset base de 6 alimentos">
+              Restaurar Base
+            </button>
+          </div>
+        </header>
+
+      <!-- Métricas / Indicadores Rápidos -->
+      <div class="grilla-kpis-admin">
+        <div class="tarjeta-kpi">
+          <span class="etiqueta-kpi">Total Alimentos Activos</span>
+          <strong class="valor-kpi" id="kpi-total-productos">6</strong>
+          <span class="detalle-kpi">En catálogo visible</span>
+        </div>
+
+        <div class="tarjeta-kpi">
+          <span class="etiqueta-kpi">Unidades en Inventario</span>
+          <strong class="valor-kpi" id="kpi-total-stock">179</strong>
+          <span class="detalle-kpi">Disponibilidad consolidada</span>
+        </div>
+
+        <div class="tarjeta-kpi">
+          <span class="etiqueta-kpi">Productores Vinculados</span>
+          <strong class="valor-kpi" id="kpi-total-productores">6</strong>
+          <span class="detalle-kpi">En 5 departamentos</span>
+        </div>
+
+        <div class="tarjeta-kpi">
+          <span class="etiqueta-kpi">Ciudades Cubiertas</span>
+          <strong class="valor-kpi" id="kpi-total-ciudades">8</strong>
+          <span class="detalle-kpi">Red logística activa</span>
+        </div>
+      </div>
+
+      <!-- Contenedor del Gráfico Estadístico (Chart.js) -->
+      <div class="contenedor-grafico-admin">
+        <h3 class="titulo-grafico">Distribución de Inventario por Categoría</h3>
+        <p class="descripcion-grafico">Monitoreo reactivo de existencias para evitar desabastecimiento de alimentos de temporada.</p>
+        <div class="lienzo-grafico">
+          <canvas id="grafico-estadisticas-inventario" aria-label="Gráfico de distribución de stock de productos por categoría" role="img"></canvas>
+        </div>
+      </div>
+
+      <!-- Formulario CRUD de Productos -->
+      <div class="contenedor-formulario-crud">
+        <h3 class="titulo-formulario-crud" id="titulo-operacion-crud">Registrar Nuevo Alimento</h3>
+        <p class="descripcion-formulario-crud">Completa los datos del productor y alimento. La información se almacena localmente mediante localStorage.</p>
+
+        <form action="#" method="post" class="formulario-crud" id="formulario-producto-crud">
+          <!-- Campo oculto para edición de ID -->
+          <input type="hidden" id="crud-producto-id" name="producto-id" value="">
+
+          <div class="fila-formulario-crud">
+            <div class="campo-formulario">
+              <label for="crud-nombre-producto" class="etiqueta-formulario">Nombre del producto:</label>
+              <input type="text" id="crud-nombre-producto" name="nombre" placeholder="Ej. Mora Silvestre de Silos" required class="campo-entrada">
+            </div>
+
+            <div class="campo-formulario">
+              <label for="crud-categoria-producto" class="etiqueta-formulario">Categoría:</label>
+              <select id="crud-categoria-producto" name="categoria" required class="campo-seleccion">
+                <option value="">Selecciona una categoría</option>
+                <option value="frutas-verduras">Frutas y Verduras</option>
+                <option value="cafe-cacao">Café y Cacao</option>
+                <option value="lacteos-huevos">Lácteos y Huevos</option>
+                <option value="granos-cereales">Granos y Cereales</option>
+                <option value="conservas-miel">Mieles y Conservas</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fila-formulario-crud">
+            <div class="campo-formulario">
+              <label for="crud-precio-producto" class="etiqueta-formulario">Precio unitario (COP):</label>
+              <input type="number" id="crud-precio-producto" name="precio" placeholder="Ej. 12000" min="500" step="100" required class="campo-entrada">
+            </div>
+
+            <div class="campo-formulario">
+              <label for="crud-unidad-producto" class="etiqueta-formulario">Unidad de medida:</label>
+              <input type="text" id="crud-unidad-producto" name="unidad" placeholder="Ej. Canastilla 500g, Kg, Libra" required class="campo-entrada">
+            </div>
+
+            <div class="campo-formulario">
+              <label for="crud-stock-producto" class="etiqueta-formulario">Cantidad en stock:</label>
+              <input type="number" id="crud-stock-producto" name="stock" placeholder="Ej. 30" min="0" required class="campo-entrada">
+            </div>
+          </div>
+
+          <div class="fila-formulario-crud">
+            <div class="campo-formulario">
+              <label for="crud-ciudad-producto" class="etiqueta-formulario">Ciudad de origen autorizada:</label>
+              <select id="crud-ciudad-producto" name="ciudad" required class="campo-seleccion">
+                <option value="">Selecciona la ciudad</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Floridablanca">Floridablanca</option>
+                <option value="Girón">Girón</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Medellín">Medellín</option>
+                <option value="Cali">Cali</option>
+                <option value="Tunja">Tunja</option>
+                <option value="Cúcuta">Cúcuta</option>
+              </select>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="crud-productor-producto" class="etiqueta-formulario">Nombre del productor o finca:</label>
+              <input type="text" id="crud-productor-producto" name="productor" placeholder="Ej. Finca La Pradera" required class="campo-entrada">
+            </div>
+
+            <div class="campo-formulario">
+              <label for="crud-imagen-producto" class="etiqueta-formulario">URL de imagen (Placeholder):</label>
+              <input type="url" id="crud-imagen-producto" name="imagen" placeholder="https://placehold.co/400x300/png" required class="campo-entrada">
+            </div>
+          </div>
+
+          <div class="fila-formulario-crud-casilla">
+            <input type="checkbox" id="crud-organico-producto" name="organico" class="campo-casilla">
+            <label for="crud-organico-producto" class="etiqueta-casilla">Cuenta con certificación orgánica o agroecológica verificada</label>
+          </div>
+
+          <div class="acciones-formulario-crud">
+            <button type="submit" class="boton-guardar-crud" id="boton-guardar-producto">Guardar alimento en inventario</button>
+            <button type="reset" class="boton-limpiar-crud" id="boton-limpiar-formulario">Limpiar formulario</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Tabla Semántica de Inventario CRUD -->
+      <div class="contenedor-tabla-admin">
+        <h3 class="titulo-tabla-admin">Listado Completo de Existencias</h3>
+        <p class="descripcion-tabla-admin">Control detallado de registros almacenados con opciones de modificación y retiro.</p>
+
+        <div class="envoltorio-tabla-responsiva">
+          <table class="tabla-inventario-admin" id="tabla-gestion-inventario">
+            <caption class="leyenda-tabla">Inventario de alimentos registrados en EcoMarket Colombia</caption>
+            <thead>
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Alimento</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Ciudad Origen</th>
+                <th scope="col">Precio (COP)</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Sello</th>
+                <th scope="col">Acciones de Gestión</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpo-tabla-inventario">
+              <tr>
+                <td>ECO-001</td>
+                <td>Fresas Agroecológicas de Berlín</td>
+                <td>Frutas y Verduras</td>
+                <td>Bucaramanga</td>
+                <td>$11.500</td>
+                <td>24 unidades</td>
+                <td>Orgánico</td>
+                <td class="celda-acciones">
+                  <button type="button" class="boton-accion-editar" aria-label="Editar Fresas Agroecológicas de Berlín">Editar</button>
+                  <button type="button" class="boton-accion-eliminar" aria-label="Eliminar Fresas Agroecológicas de Berlín">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>ECO-002</td>
+                <td>Café Especial Tostión Media</td>
+                <td>Café y Cacao</td>
+                <td>Girón</td>
+                <td>$24.000</td>
+                <td>18 unidades</td>
+                <td>Origen Local</td>
+                <td class="celda-acciones">
+                  <button type="button" class="boton-accion-editar" aria-label="Editar Café Especial Tostión Media">Editar</button>
+                  <button type="button" class="boton-accion-eliminar" aria-label="Eliminar Café Especial Tostión Media">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>ECO-003</td>
+                <td>Huevos Campesinos de Gallina Feliz</td>
+                <td>Lácteos y Huevos</td>
+                <td>Floridablanca</td>
+                <td>$21.000</td>
+                <td>35 unidades</td>
+                <td>Pastoreo</td>
+                <td class="celda-acciones">
+                  <button type="button" class="boton-accion-editar" aria-label="Editar Huevos Campesinos de Gallina Feliz">Editar</button>
+                  <button type="button" class="boton-accion-eliminar" aria-label="Eliminar Huevos Campesinos de Gallina Feliz">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>ECO-004</td>
+                <td>Quinua Real Agroecológica</td>
+                <td>Granos y Cereales</td>
+                <td>Tunja</td>
+                <td>$14.200</td>
+                <td>40 unidades</td>
+                <td>Orgánico</td>
+                <td class="celda-acciones">
+                  <button type="button" class="boton-accion-editar" aria-label="Editar Quinua Real Agroecológica">Editar</button>
+                  <button type="button" class="boton-accion-eliminar" aria-label="Eliminar Quinua Real Agroecológica">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>ECO-005</td>
+                <td>Miel Multifloral de Bosque Andino</td>
+                <td>Mieles y Conservas</td>
+                <td>Bogotá</td>
+                <td>$28.000</td>
+                <td>12 unidades</td>
+                <td>Orgánico</td>
+                <td class="celda-acciones">
+                  <button type="button" class="boton-accion-editar" aria-label="Editar Miel Multifloral de Bosque Andino">Editar</button>
+                  <button type="button" class="boton-accion-eliminar" aria-label="Eliminar Miel Multifloral de Bosque Andino">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>ECO-006</td>
+                <td>Aguacate Hass Agroecológico</td>
+                <td>Frutas y Verduras</td>
+                <td>Medellín</td>
+                <td>$13.800</td>
+                <td>50 unidades</td>
+                <td>Origen Local</td>
+                <td class="celda-acciones">
+                  <button type="button" class="boton-accion-editar" aria-label="Editar Aguacate Hass Agroecológico">Editar</button>
+                  <button type="button" class="boton-accion-eliminar" aria-label="Eliminar Aguacate Hass Agroecológico">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="pie-pagina" id="contacto">
+    <div class="contenedor-pie-pagina">
+      <div class="columna-pie-identidad">
+        <a href="#inicio" class="enlace-logo-pie">
+          <span class="logo-texto-pie">EcoMarket</span>
+        </a>
+        <p class="mision-pie">
+          Startup colombiana comprometida con la soberanía alimentaria, la regeneración del suelo y el pago justo a los productores de nuestro país.
+        </p>
+      </div>
+
+      <div class="columna-pie-navegacion">
+        <h4 class="titulo-columna-pie">Explorar</h4>
+        <ul class="lista-enlaces-pie">
+          <li><a href="#hero" class="enlace-pie">Inicio</a></li>
+          <li><a href="#beneficios" class="enlace-pie">Beneficios</a></li>
+          <li><a href="#categorias" class="enlace-pie">Categorías</a></li>
+          <li><a href="#catalogo" class="enlace-pie">Catálogo Local</a></li>
+          <li><a href="#admin" class="enlace-pie">Panel Administrativo</a></li>
+        </ul>
+      </div>
+
+      <div class="columna-pie-cobertura">
+        <h4 class="titulo-columna-pie">Ciudades Autorizadas</h4>
+        <ul class="lista-ciudades-pie">
+          <li>Bucaramanga (Santander)</li>
+          <li>Floridablanca (Santander)</li>
+          <li>Girón (Santander)</li>
+          <li>Bogotá D.C.</li>
+          <li>Medellín (Antioquia)</li>
+          <li>Cali (Valle del Cauca)</li>
+          <li>Tunja (Boyacá)</li>
+          <li>Cúcuta (Norte de Santander)</li>
+        </ul>
+      </div>
+
+      <div class="columna-pie-legal">
+        <h4 class="titulo-columna-pie">Transparencia</h4>
+        <ul class="lista-enlaces-pie">
+          <li><a href="#hero" class="enlace-pie">Criterios de Certificación</a></li>
+          <li><a href="#hero" class="enlace-pie">Términos del Servicio</a></li>
+          <li><a href="#hero" class="enlace-pie">Política de Privacidad</a></li>
+          <li><a href="#hero" class="enlace-pie">Comercio Justo Verificado</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="barra-derechos-pie">
+      <p class="texto-derechos">&copy; 2026 EcoMarket Colombia. Proyecto académico de comercio electrónico sostenible. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
